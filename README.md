@@ -2,7 +2,7 @@
 
 Nesta edição da Maratona dev foi desenvolvido um portal simples de cadastro de doadores de sangue e o cadastro em banco de dados.
 
-Professor: [Diego Fernandes](https://github.com/diego3g)
+Professor: [Mayk Brito](https://github.com/maykbrito)
 
 # Tecnologias
 * HTML
