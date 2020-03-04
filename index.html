@@ -8,12 +8,19 @@
 
 <body>
     <div class="switch__container" id="switch__container">
-        <input id="switch-shadow" class="switch switch--shadow" type="checkbox"/>
+        <input id="switch-shadow" class="switch switch--shadow" type="checkbox" />
         <label for="switch-shadow"></label>
         <p>Dark Mode</p>
     </div>
     <header id="header">
         <img src="./img/logo.png" alt="Imagem de DOE" class="logo" id="logo">
+        <div id="error">
+            <h2>{%if error %}{{error}}
+                {%else%}
+                <script>document.getElementById("error").style.display = "none";</script>
+                {%endif%}
+            </h2>
+        </div>
         <h2>A sua doação importa</h2>
         <p>Até 3 vidas com 1 doação</p>
         <p>Mais de 38.000 doações são necessárias todos os dias</p>
@@ -22,13 +29,22 @@
     </header>
     <section id="section" class="form hide">
         <h2>Entre na lista de doadores</h2>
-        <form action="/" method="post">
-            <input type="text" name="name" placeholder="Nome Completo">
-            <input type="text" name="email" placeholder="E-mail">
-            <input type="text" name="blood" placeholder="Tipo Sanguinio">
+        <form action="/" method="post" id="form">
+            <input type="text" name="name" id="formname" placeholder="Nome Completo">
+            <p id="name-error" class="error">Nome Inválido!</p>
+            <input type="text" name="email" id="formemail" placeholder="E-mail">
+            <p id="email-error" class="error">Email Inválido!</p>
+            <input type="text" name="blood" id="formblood" placeholder="Tipo Sanguinio">
+            <p id="blood-error" class="error">Sangue Inválido!</p>
             <button>Quero Ajudar!</button>
         </form>
     </section>
+
+    <h2>{%if error %}
+        <script>document
+                .querySelector('.form')
+                .classList.toggle('hide')</script>
+        {%endif%}</h2>
 
     <main id="main">
         <h2>Ultimos <span>doadores</span></h2>

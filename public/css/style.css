@@ -170,6 +170,29 @@ body.dark {
     z-index: -100;
 }
 
+.error {
+    position: relative;
+    padding: 0;
+    bottom: 3px;
+    color: #ffffffa1;
+    font-size: 10px;
+    display: none;
+}
+
+#error {
+    background-color: #FF4F4F;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    width: 100%;
+    padding: 5px 0;
+
+}
+
+#error h2 {
+    color: white;
+}
+
 /* BOTAO DARK MODE */
 
 .switch__container {

@@ -29,7 +29,8 @@ nunjucks.configure("./", {
 // REQUISIÇÕES
 server.get("/", (req, res) => {
     db.query('SELECT * FROM donors', (err, result) => {
-        if (err) return res.send("Erro no banco de dados." + err);
+       // if (err) return res.send("Erro no banco de dados." + err);
+        if (err) return res.render("index.html", { error: "Erro no banco de dados" });
 
         const donors = result.rows;
 
@@ -44,7 +45,8 @@ server.post("/", (req, res) => {
     const blood = req.body.blood;
 
     if (name == '' || email == '' || blood == '') {
-        return res.send("Todos os campos são obrigatórios.");
+        //return res.send("Todos os campos são obrigatórios.");
+        return res.render("index.html", { error: "Todos os campos são obrigatórios" });
     }
 
     // SALVA NO BANCO DE DADOS
@@ -52,7 +54,8 @@ server.post("/", (req, res) => {
     const values = [name, email, blood];
 
     db.query(query, values, err => {
-        if (err) return res.send("Erro no banco de dados." + err);
+        //if (err) return res.send("Erro no banco de dados." + err);
+        if (err) return res.render("index.html", { error: "Erro no banco de dados" });
 
         return res.redirect("/");
     });
