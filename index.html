@@ -7,16 +7,20 @@
 </head>
 
 <body>
-    <header>
-        <img src="./img/logo.png" alt="Imagem de DOE" class="logo">
+    <div class="switch__container" id="switch__container">
+        <input id="switch-shadow" class="switch switch--shadow" type="checkbox"/>
+        <label for="switch-shadow"></label>
+        <p>Dark Mode</p>
+    </div>
+    <header id="header">
+        <img src="./img/logo.png" alt="Imagem de DOE" class="logo" id="logo">
         <h2>A sua doação importa</h2>
         <p>Até 3 vidas com 1 doação</p>
         <p>Mais de 38.000 doações são necessárias todos os dias</p>
         <p>Apenas 1,9% da população brasileira doa sangue.</p>
         <button>Quero Ajudar</button>
     </header>
-
-    <section class="form hide">
+    <section id="section" class="form hide">
         <h2>Entre na lista de doadores</h2>
         <form action="/" method="post">
             <input type="text" name="name" placeholder="Nome Completo">
@@ -26,7 +30,7 @@
         </form>
     </section>
 
-    <main>
+    <main id="main">
         <h2>Ultimos <span>doadores</span></h2>
         <section class="donors">
             {% for donor in donors %}
@@ -37,7 +41,7 @@
             {% endfor %}
         </section>
     </main>
-    <footer> Com <emogi>❣</emogi> Rocketseat</footer>
+    <footer id="footer"> Com <emogi>❣</emogi> Rocketseat</footer>
     <script src="./js/script.js"></script>
 </body>
 
