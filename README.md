@@ -13,8 +13,11 @@ Professor: [Mayk Brito](https://github.com/maykbrito)
 * Postgres
 
 # Interface
-
+### light Mode
 ![](https://raw.githubusercontent.com/jeanoliveira92/rocketseat-maratonadev-3.0/master/screenshot.png)
+
+### Dark Mode
+![](https://raw.githubusercontent.com/jeanoliveira92/rocketseat-maratonadev-3.0/master/screenshot2.jpg)
 
 ## Licença
 
