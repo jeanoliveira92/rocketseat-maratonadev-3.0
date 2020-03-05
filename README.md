@@ -13,6 +13,9 @@ Professor: [Mayk Brito](https://github.com/maykbrito)
 * Postgres
 
 # Interface
+### Página Inicial
+![](https://raw.githubusercontent.com/jeanoliveira92/rocketseat-maratonadev-3.0/master/imgs/screenshot.png)
+
 ### Temas: light/Dark
 ![](https://raw.githubusercontent.com/jeanoliveira92/rocketseat-maratonadev-3.0/master/imgs/modos.gif)
 
