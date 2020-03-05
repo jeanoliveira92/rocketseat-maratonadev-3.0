@@ -2,6 +2,8 @@
 
 Nesta edição da Maratona dev foi desenvolvido um portal simples de cadastro de doadores de sangue e o cadastro em banco de dados.
 
+Extras: Implementações realizadas a fim de melhorar o projeto em alguns aspectos: Temas e validações de erros.
+
 Professor: [Mayk Brito](https://github.com/maykbrito)
 
 # Tecnologias
@@ -14,10 +16,16 @@ Professor: [Mayk Brito](https://github.com/maykbrito)
 
 # Interface
 ### Página Inicial
-![](https://raw.githubusercontent.com/jeanoliveira92/rocketseat-maratonadev-3.0/master/imgs/screenshot.png)
+![](https://github.com/jeanoliveira92/rocketseat-maratonadev-3.0/blob/master/imgs/screenshot.png)
 
-### Temas: light/Dark
+### Extras: Temas light/Dark
 ![](https://raw.githubusercontent.com/jeanoliveira92/rocketseat-maratonadev-3.0/master/imgs/modos.gif)
+
+### Extras: Validação de Formulário
+![](https://github.com/jeanoliveira92/rocketseat-maratonadev-3.0/blob/master/imgs/camposvazios.gif)
+
+### Extras: Validação de Banco de Dados
+![](https://github.com/jeanoliveira92/rocketseat-maratonadev-3.0/blob/master/imgs/errobd.gif)
 
 ## Licença
 
